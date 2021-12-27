@@ -1,5 +1,5 @@
 const mongodb = require('mongodb').MongoClient
-const url = 'mongodb+srv://alanadias:479856aa@cluster0.0h4vm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const url = 'mongodb+srv://<user>:<password>@cluster0.0h4vm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const client = new mongodb(url)
 
 async function conectar() {
