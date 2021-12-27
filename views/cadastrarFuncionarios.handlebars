@@ -1,0 +1,25 @@
+<section class="container m-auto w-50 py-5" style="margin:20px">
+<form action="/cadastrarFuncionarios" method="POST" class="fs-5 ">
+  <div class="mb-3">
+    <label class="form-label">Nome:</label>
+    <input type="text" class="form-control border-success" name="nomeFunc" value="{{resultado.nomeFunc}}" >
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Endereço:</label>
+    <input type="text" class="form-control border-success" name="enderecoFunc" value="{{resultado.enderecoFunc}}">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email:</label>
+    <input type="email" class="form-control border-success" name="emailFunc" value="{{resultado.emailFunc}}">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Salário:</label>
+    <input type="text" class="form-control border-success" name="salarioFunc" value="{{resultado.salarioFunc}}">
+  </div>
+  <div class="text-center">
+    <input type="hidden" name="idFuncionario" value="{{resultado._id}}">
+    <button type="reset" class="btn btn-warning m-3">Limpar</button>
+    <button type="submit" class="btn btn-success m-3">{{acao}}</button>
+  </div>
+</form>
+</section>

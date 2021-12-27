@@ -1,0 +1,25 @@
+<section class="container m-auto w-50 py-5" style="margin:20px">
+<form action="/cadastrarClientes" method="POST" class="fs-5 ">
+  <div class="mb-3">
+    <label class="form-label">Nome:</label>
+    <input type="text" class="form-control border-success" name="nomeCliente" value="{{resultado.nomeCliente}}" >
+  </div>
+   <div class="mb-3">
+    <label class="form-label">CPF:</label>
+    <input type="text" class="form-control border-success" name="cpfCliente" maxlength="11" value="{{resultado.cpfCliente}}">
+  </div>
+   <div class="mb-3">
+    <label class="form-label">Email:</label>
+    <input type="email" class="form-control border-success" name="emailCliente" value="{{resultado.emailCliente}}">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Endereço:</label>
+    <input type="text" class="form-control border-success" name="enderecoCliente" value="{{resultado.enderecoCliente}}">
+  </div>
+  <div class="text-center">
+    <input type="hidden" name="idCliente" value="{{resultado._id}}">
+    <button type="reset" class="btn btn-warning m-3">Limpar</button>
+    <button type="submit" class="btn btn-success m-3">{{acao}}</button>
+  </div>
+</form>
+</section>
